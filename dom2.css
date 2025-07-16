@@ -1,0 +1,55 @@
+body {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+#main-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 40px;
+}
+
+.container {
+    
+    /*Box Size*/
+    height: 200px;
+    width:  400px;
+
+    /*Centering*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /*color*/
+    border: 3px solid white;
+    border-radius: 12px; 
+
+    /* Center child elements like the button */
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    flex-direction: column;  /* Stack button and hidden text vertically */
+
+    cursor: pointer;
+}
+
+.boxes {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.hidden {
+    display: none;
+}
+
+.reveal-btn {
+    background: none;
+    border: none;
+    color: inherit;                /* inherits from container */
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;                   /* optional: full width */
+    height: 100%;                  /* optional: full height */
+}
